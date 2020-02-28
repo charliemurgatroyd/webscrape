@@ -1,0 +1,6 @@
+services:
+  - docker
+
+script:
+  - docker image build -t cmurgatroyd/blatest .
+  - docker container run cmurgatroyd/blatest
